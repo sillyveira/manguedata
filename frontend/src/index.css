@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@theme {
+	--font-sans: "DM Sans";
+	--font-serif: "DM Sans";
+
+	--color-blue-950: #071f6d;
+	--color-blue-900: #060e99;
+	--color-blue-100: #188abd;
+	--color-blue-200: #1552D7;
+	--color-green-100: #66e05b;
+	--color-green-200: #1bd39a;
+}
+
+@layer utilities {
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+}

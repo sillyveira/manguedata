@@ -1,15 +1,7 @@
-import { useState } from 'react'
+import AppRoutes from "./routes";
 
-function App() {
+const App = () => {
+	return <AppRoutes />;
+};
 
-  return (
-    <>
-    
-      <p className="text-2xl">
-        TailwindCSS instalado
-      </p>
-    </>
-  )
-}
-
-export default App
+export default App;

@@ -1,4 +1,10 @@
 import IAavatar1 from "@/assets/IAavatar1.png";
+import bike01 from "@/assets/dashboards/01bike.png";
+import bike02 from "@/assets/dashboards/02bike.png";
+import bike03 from "@/assets/dashboards/03bike.png";
+import bike04 from "@/assets/dashboards/04bike.png";
+import bike05 from "@/assets/dashboards/05bike.png";
+import bike06 from "@/assets/dashboards/06bike.png";
 import BgBike from "@/assets/dashboards/Bg-ciclo-faixas.png";
 import Footer from "@/components/layout/footer";
 import Navbar from "@/components/layout/navbar";
@@ -44,8 +50,11 @@ export default function MonitoramentoMeteorologico() {
 							<span className=" text-3xl font-bold">84</span>
 						</div>
 					</div>
-					<div className="col-span-2 my-6">
-						<button className="bg-gradient-to-r from-blue-100 to-green-200 text-white rounded-full p-3 px-5 w-full text-center">
+					<div className="col-span-2 my-4">
+						<button
+							className="bg-gradient-to-r from-blue-100 to-green-200 text-white rounded-full p-3 px-5 w-full text-center"
+							onClick={() => navigate("/chat")}
+						>
 							Consultar assistente virtual sobre Malha Cicloviária
 						</button>
 					</div>
@@ -77,6 +86,82 @@ export default function MonitoramentoMeteorologico() {
 							integração entre modais, tornando os deslocamentos mais ágeis e
 							sustentáveis.
 						</span>
+					</div>
+
+					<div className="col-span-2 text-center ">
+						<span className=" text-lg ">Mapa de estações</span>
+						<div className="rounded-3xl mt-4">
+							<img src={bike01} alt="" className="rounded-3xl w-full h-full" />
+						</div>
+					</div>
+					<div className="col-span-2 text-center ">
+						<span className=" text-lg ">
+							Distribuição de estações por região
+						</span>
+						<div className="rounded-3xl mt-4 border-blue-950 border-2">
+							<img src={bike03} alt="" className="rounded-3xl w-full h-full" />
+						</div>
+					</div>
+					<div className="col-span-2 text-center ">
+						<span className=" text-lg ">
+							Distribuição de estações por bairro
+						</span>
+						<div className="rounded-3xl mt-4 border-blue-950 border-2 p-2">
+							<img src={bike02} alt="" className="rounded-3xl w-full h-full" />
+						</div>
+					</div>
+
+					<div className="col-span-2 flex flex-col gap-4 text-center mt-8">
+						<span className="text-3xl font-bold col-span-2 mb-3">
+							Roteiros e Percursos
+						</span>
+
+						<span className="text-xl text-justify">
+							A malha cicloviária conecta bairros e zonas da cidade, permitindo
+							deslocamentos práticos para trabalho, lazer e esporte. Com rotas
+							arborizadas, vias beira-rio e trajetos culturais, pedalar se torna
+							uma experiência agradável. A expansão contínua reforça uma cidade
+							mais segura, inclusiva e conectada.
+						</span>
+					</div>
+
+					<div className="col-span-2 text-center ">
+						<span className=" text-lg ">Mapa de ciclovias</span>
+						<div className="rounded-3xl mt-4">
+							<img src={bike05} alt="" className="rounded-3xl w-full h-full" />
+						</div>
+					</div>
+					<div className="col-span-2 text-center ">
+						<span className=" text-lg ">
+							Distribuição de ciclovias por região
+						</span>
+						<div className="rounded-3xl mt-4 border-blue-950 border-2 p-2">
+							<img src={bike04} alt="" className="rounded-3xl w-full h-full" />
+						</div>
+					</div>
+
+					<div className="col-span-2 flex flex-col gap-4 text-center mt-8">
+						<span className="text-3xl font-bold col-span-2 mb-3">
+							Tipologias de Ciclovias
+						</span>
+
+						<span className="text-xl text-justify">
+							A malha cicloviária inclui ciclofaixas, ciclovias e ciclorrotas,
+							atendendo diferentes necessidades. Ciclofaixas são demarcações na
+							via para trechos curtos e lentos, ciclovias são pistas exclusivas
+							para maior segurança, e ciclorrotas são caminhos compartilhados
+							com sinalização. Essa diversidade facilita o acesso para todos os
+							ciclistas.
+						</span>
+					</div>
+
+					<div className="col-span-2 text-center ">
+						<span className=" text-lg ">
+							Distribuição de estações por bairro
+						</span>
+						<div className="rounded-3xl mt-4 border-blue-950 border-2 p-2">
+							<img src={bike06} alt="" className="rounded-3xl w-full h-full" />
+						</div>
 					</div>
 				</div>
 			</div>

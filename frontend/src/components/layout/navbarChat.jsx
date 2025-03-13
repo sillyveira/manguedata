@@ -10,11 +10,9 @@ export default function NavbarChat() {
 		<div>
 			<div className="bg-blue-950 fixed top-0 w-full flex items-center p-6 z-50">
 				<img src={hamburguer} alt="Menu" className="h-8" />
-				<img
-					src={logoHubDeDados}
-					alt="Logo Hub de Dados"
-					className="h-12 ml-auto"
-				/>
+				<div onClick={() => navigate("/")} className="ml-auto">
+					<img src={logoHubDeDados} alt="Logo Senac" className="h-12 " />
+				</div>
 			</div>
 
 			<div className="bg-[#CDE2F5]/50 backdrop-blur-md fixed top-0 w-full flex items-center p-6 py-4 mt-24 space-x-4 z-40">

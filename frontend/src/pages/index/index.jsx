@@ -5,13 +5,12 @@ import categorias_recentes_4 from "@/assets/categorias_recentes/4.png";
 import categorias_recentes_5 from "@/assets/categorias_recentes/5.png";
 import categorias_recentes_6 from "@/assets/categorias_recentes/6.png";
 import IAavatar1 from "@/assets/IAavatar1.png";
-import logoHubDeDados from "@/assets/logos/logoHubDeDados.png";
-import logoPrefeituraRec from "@/assets/logos/logoPrefeituraRec.png";
 import talvez_queira_saber_1 from "@/assets/talvez_queira_saber/1.png";
 import talvez_queira_saber_2 from "@/assets/talvez_queira_saber/2.png";
 import talvez_queira_saber_3 from "@/assets/talvez_queira_saber/3.png";
 import talvez_queira_saber_4 from "@/assets/talvez_queira_saber/4.png";
 import talvez_queira_saber_5 from "@/assets/talvez_queira_saber/5.png";
+import Footer from "@/components/layout/footer";
 import Navbar from "@/components/layout/navbar";
 import Button from "@/components/ui/button";
 import ImageCard from "@/components/ui/imageCard";
@@ -67,7 +66,7 @@ export default function Chat() {
 							transparent
 						/>
 					</div>
-					<div onClick={() => navigate("/malha-cicloviria")}>
+					<div onClick={() => navigate("/malha-cicloviaria")}>
 						<ImageCard
 							title="Malha cicloviária de Recife"
 							image={talvez_queira_saber_2}
@@ -137,19 +136,7 @@ export default function Chat() {
 					<div className="ml-3"></div>
 				</div>
 			</div>
-			<div className="flex flex-col gap-7 pt-10 pb-12 px-7 bg-blue-950">
-				<span className="font-bold text-xl text-white">
-					Não achou o que procurava?
-				</span>
-				<button className="bg-gradient-to-r from-blue-100 to-green-200 text-white rounded-full p-3 px-5 w-full text-center">
-					Abrir Central de Dados Abertos
-				</button>
-				<div className="flex items-center justify-center gap-5 mt-5">
-					<img src={logoHubDeDados} alt="Logo Senac" className="h-12" />
-					<div className="h-12 border-white border"></div>
-					<img src={logoPrefeituraRec} alt="Logo Senac" className="h-12" />
-				</div>
-			</div>
+			<Footer />
 		</main>
 	);
 }
